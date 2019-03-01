@@ -1,0 +1,17 @@
+{% extends 'home.html' %}
+
+{% block title %}Events {% endblock title %}
+{% block main %}
+
+<table>
+    <tbody>
+            {% for event in events %}
+                {% for key, value in events.items() %}
+                <h2>Key: {{key}}</h2>
+                <h2>Value: {{value}}</h2>
+                {% endfor %}
+            {% endfor %}
+    </tbody>
+</table>
+{% endblock main %}
+

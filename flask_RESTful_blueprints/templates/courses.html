@@ -1,0 +1,16 @@
+{% extends 'home.html' %}
+
+{% block title %}Courses {% endblock title %}
+{% block main %}
+
+<table>
+    <tbody>
+            {% for course in courses %}
+                {% for key, value in courses.items() %}
+                <h2>Key: {{key}}</h2>
+                <h2>Value: {{value}}</h2>
+                {% endfor %}
+            {% endfor %}
+    </tbody>
+</table>
+{% endblock main %}
